@@ -1,5 +1,6 @@
 <template>
   <div style="position: relative;">
+    <span class="fa fa-search search-icon"></span>
     <input
       :id="inputId"
       v-model="value"
@@ -256,6 +257,22 @@ export default {
         min-width: 30em;
         max-height: 30em;
         overflow-y: scroll;
+    }
+
+    .form-control {
+      padding-left: 2.375rem;
+    }
+
+    .search-icon {
+      color: #aaa;
+      display: block;
+      height: 2.375rem;
+      line-height: 2.375rem;
+      pointer-events: none;
+      position: absolute;
+      text-align: center;
+      width: 2.375rem;
+      z-index: 1;
     }
 
     .dropdown-menu > li > a {
